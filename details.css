@@ -1,0 +1,77 @@
+#main-image{
+	height: 390px;
+}
+
+.card {
+	border: none
+}
+
+.product {
+	background-color: #eee
+}
+
+.brand {
+	font-size: 13px
+}
+
+.act-price {
+	color: #a17f4e;
+	font-weight: 700
+}
+
+.dis-price {
+	text-decoration: line-through
+}
+
+.about {
+	font-size: 14px
+}
+
+.color {
+	margin-bottom: 10px
+}
+
+label.radio {
+	cursor: pointer
+}
+
+label.radio input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	pointer-events: none
+}
+
+label.radio span {
+	padding: 2px 9px;
+	border: 2px solid #a17f4e;
+	display: inline-block;
+	color: #a17f4e;
+	border-radius: 3px;
+	text-transform: uppercase
+}
+
+label.radio input:checked+span {
+	border-color: #a17f4e;
+	background-color: #a17f4e;
+	color: #fff
+}
+
+.btn-danger {
+	background-color: #a17f4e !important;
+	border-color: #a17f4e !important
+}
+
+.btn-danger:hover {
+	background-color: #a17f4e !important;
+	border-color: #a17f4e !important
+}
+
+.btn-danger:focus {
+	box-shadow: none
+}
+
+.cart i {
+	margin-right: 10px
+}

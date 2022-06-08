@@ -1,0 +1,56 @@
+[
+    {
+        "image": "./images/img1.jpg",
+        "title": "Pants",
+        "price": 120,
+        "description": "this is a descrition fo the product"
+    },
+    {
+        "image": "./images/img2.webp",
+        "title": "T-shirt",
+        "price": 150,
+        "description": "this is a descrition fo the product"
+    },
+    {
+        "image": "./images/img5.webp",
+        "title": "T-shirt",
+        "price": 150,
+        "description": "this is a descrition fo the product"
+    },
+    {
+        "image": "./images/img3.jpg",
+        "title": "T-shirt",
+        "price": 140,
+        "description": "this is a descrition fo the product"
+    },
+    {
+        "image": "./images/img4.webp",
+        "title": "T-shirt",
+        "price": 200,
+        "description": "this is a descrition fo the product"
+    },
+    {
+        "image": "./images/img3.jpg",
+        "title": "T-shirt",
+        "price": 290,
+        "description": "this is a descrition fo the product"
+    },
+    {
+        "image": "./images/img3.jpg",
+        "title": "Pants",
+        "price": 430,
+        "description": "this is a descrition fo the product"
+    },
+    {
+        "image": "./images/img3.jpg",
+        "title": "Pants",
+        "price": 300,
+        "description": "this is a descrition fo the product"
+    },
+    {
+        "image": "./images/img3.jpg",
+        "title": "Pants",
+        "price": 500,
+        "description": "this is a descrition fo the product"
+    }
+]

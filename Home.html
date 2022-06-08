@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <!-- Starting header -->
+    <section>
+        <nav class="navbar navbar-expand-lg bg-light position-fixed w-100">
+            <div class="container">
+                <!-- <a class="navbar-brand" href="#"><img src="" alt=""></a> -->
+                <i class="navbar-brand fa-brands fa-shopify logo"></i>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="main" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active p-lg-3" aria-current="page" href="./Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-lg-3" href="./About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-lg-3" href="./Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="search ps-3 pe-3 d-none d-lg-block">
+                        <i class="bi bi-search"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- Ending header -->
+
+
+    <!-- starting slider -->
+    <div class="slider-container">
+        <div class="slider">
+            <div class="image"></div>
+        </div>
+
+        <span class="next-btn">
+            <!-- <button class="arrow-btn" id="next" role="button"> > </button> -->
+            <i id="next" class="fa-solid fa-chevron-right"></i>
+        </span>
+
+        <span class="prev-btn">
+            <!-- <button class="arrow-btn" id="pre" role="button"> < </button> -->
+            <i id="pre" class="fa-solid fa-chevron-left"></i>
+        </span>
+    </div>
+    <!-- Ending slider -->
+
+    <section>
+        <div class="features text-center mt-5 mb-5">
+            <div class="container">
+                <div class="main-title mt-5 mb-5 position-relative">
+                    <!-- <img class="mb-4" src="./images/logo.jpg" alt=""> -->
+                    <i class="navbar-brand fa-brands fa-shopify main-logo mb-5 "></i>
+                    <h2>We are offering</h2>
+                    <p class="text-black-50">SOME OF THESE STUFFE UNDER</p>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feat">
+                            <div class="icon-holder position-relative">
+                                <i class="fa-duotone fa-1 position-absolute bottom-0 number"></i>
+                                <!-- <i class="fa-solid fa-briefcase-medical fa-4x position-absolute bottom-0 icon"></i> -->
+                                <i class="fa-solid fa-shirt fa-4x position-absolute bottom-0 icon"></i>
+                            </div>
+                            <h4 class="mb-3 mt-3 text-uppercase">colthes</h4>
+                            <p class="text-black-50 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Minus,
+                                placeat?</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feat">
+                            <div class="icon-holder position-relative">
+                                <i class="fa-duotone fa-2 position-absolute bottom-0 number"></i>
+                                <!-- <i class="fa-solid fa-car-burst fa-4x position-absolute bottom-0 icon"></i> -->
+                                <i class="fa-regular fa-gem fa-4x position-absolute bottom-0 icon"></i>
+                            </div>
+                            <h4 class="mb-3 mt-3 text-uppercase">jeweleries</h4>
+                            <p class="text-black-50 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Minus,
+                                placeat?</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feat">
+                            <div class="icon-holder position-relative">
+                                <i class="fa-duotone fa-3 position-absolute bottom-0 number"></i>
+                                <!-- <i class="fa-solid fa-handcuffs fa-4x position-absolute bottom-0 icon"></i> -->
+                                <i class="fa-solid fa-tv fa-4x position-absolute bottom-0 icon"></i>
+                            </div>
+                            <h4 class="mb-3 mt-3 text-uppercase">electronics</h4>
+                            <p class="text-black-50 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Minus,
+                                placeat?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- starting cards -->
+    <div class="container">
+        <div class="categories">
+            <button class="button-28" id="all" role="button" onclick="filterProducts()">All</button>
+            <button class="button-28" id="T-shirt" role="button" onclick="filterProducts(`men's clothing`)">men's
+                clothing</button>
+            <button class="button-28" id="Pants" role="button" onclick="filterProducts(`women's clothing`)">women's
+                clothing</button>
+            <button class="button-28" id="Pants" role="button" onclick="filterProducts(`jewelery`)">jewelery</button>
+            <button class="button-28" id="Pants" role="button"
+                onclick="filterProducts(`electronics`)">electronics</button>
+        </div>
+        <div class="container">
+            <div id="cards"></div>
+        </div>
+
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="row justify-content-around mb-0 pt-5 mx-4">
+            <div class="col-xl-2 col-md-4 order-xl-1 order-4 mr-xl-0 my-auto">
+                <ul class="list-unstyled mt-md-3 mt-5">
+                    <li>Social Media</li>
+                    <li class="social"> <span> <i class="fa-brands fa-facebook"></i></span> <span> <i
+                                class="fa-brands fa-instagram"></i> </span> <span> <i class="fa-brands fa-twitter"></i>
+                        </span> </li>
+                </ul>
+                <ul class="list-unstyled my-xl-4 my-md-3">
+                    <li>Copyright</li>
+                    <li>&#9400; Nutrition 2019</li>
+                </ul>
+            </div>
+            <div class="col-xl-2 col-md-3 pt-4 order-1">
+                <ul class="list-unstyled">
+                    <li class="mt-md-0 mt-4">Our Solution</li>
+                    <li>Intergrated Security </li>
+                    <li>Core Features</li>
+                    <li>Product Features</li>
+                    <li>Pricing</li>
+                </ul>
+            </div>
+            <div class="col-xl-2 col-md-3 pt-4 order-2">
+                <ul class="list-unstyled">
+                    <li class="mt-md-0 mt-4">Your needs</li>
+                    <li>Intergrated Security </li>
+                    <li>Core Features</li>
+                    <li>Product Features</li>
+                    <li>Pricing</li>
+                </ul>
+            </div>
+            <div class="col-xl-auto col-md-3 pt-4 my-sm-0 order-md-3 order-sm-1 ">
+                <ul class="list-unstyled">
+                    <li class="mt-md-0 mt-4">Offer</li>
+                    <li>Intergrated Security </li>
+                    <li>Core Features</li>
+                    <li>Product Features</li>
+                    <li>Pricing</li>
+                </ul>
+            </div>
+            <div class="col-xl-auto col-md-6 col-12  pt-4 my-sm-0 order-6  ">
+                <div class="form-group "><label for="email" class="mb-3"><b>Subscribe to our newsletter and Get 10%
+                            off</b></label><input type="email" class="form-control form-control-lg"
+                        placeholder="Enter email" id="email"></div><button type="button"
+                    class="btn btn-primary btn-lg btn-block my-2 Subscribe mt-4 mb-3">Subscribe</button>
+            </div>
+        </div>
+        <div class="row justify-content-center px-3 py-3 pt-5">
+            <div class="col text-center">
+                <p class="mb-0">*These statement have not evaluated by the Food and Drug Addministrations.</p>
+                <p>This product is not intented to diagonse,treat,cure, or prevent any disease.</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <!-- <button id="goup">go up</button> -->
+    <i class="fa-solid fa-angles-up" id="goup"></i>
+    <!-- Ending cards -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <script src="home.js"></script>
+</body>
+
+</html>
